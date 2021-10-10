@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ToastJoshi.simpleToast(this,"Heyy this is my first library");
+        ToastJoshi.awesomeToast(this,"Heyy this is my first library");
 
     }
 }
