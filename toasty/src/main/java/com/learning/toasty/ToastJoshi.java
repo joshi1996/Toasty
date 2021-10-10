@@ -13,10 +13,10 @@ import android.widget.Toast;
 public class ToastJoshi {
     public static void awesomeToast(Context context, String msg){
 
-        final View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
+        View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
                 .inflate(R.layout.activity_toast, null);
-        final LinearLayout toastRoot = toastLayout.findViewById(R.id.toastLayout);
-        final TextView toastTextView = toastLayout.findViewById(R.id.toast);
+        LinearLayout toastRoot = toastLayout.findViewById(R.id.toastLayout);
+        TextView toastTextView = toastLayout.findViewById(R.id.toast);
 
         toastTextView.setText(msg);
         Toast toast = new Toast(context);
